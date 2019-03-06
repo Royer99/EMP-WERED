@@ -51,7 +51,7 @@ public class Character{
         this.image = image;
         return this;
     }
-    
+
     public String toString() {
         return "{" +
             " posx='" + getPosx() + "'" +
@@ -59,5 +59,5 @@ public class Character{
             ", image='" + getImage() + "'" +
             "}";
     }
-    // HOLA
+    
 }
