@@ -59,5 +59,5 @@ public class Character{
             ", image='" + getImage() + "'" +
             "}";
     }
-
+    // HOLA
 }
