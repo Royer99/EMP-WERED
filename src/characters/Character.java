@@ -1,3 +1,4 @@
+package characters;
 public class abstract Character{
     
     protected int posX;
