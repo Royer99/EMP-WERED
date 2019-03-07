@@ -10,8 +10,7 @@ public abstract class Character{
     protected int life;
 
 
-    public Character() {
-    }
+
 
     public Character(int posX, int posY, int width, int height, int velX, int velY, boolean dir, int life) {
         this.posX = posX;

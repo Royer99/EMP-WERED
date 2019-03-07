@@ -33,13 +33,17 @@ public class Dofa extends Character{
             "}");
     }
 
-    public void mover(int key){
+    public void mover(int key)
+    {
+        System.out.println("metodo mover");
     	
     }
     public void paint(){
+        System.out.println("metodo paint");
 
     }
     public void ataca(){
+        System.out.println("metodo atacar");
 
     }
 
