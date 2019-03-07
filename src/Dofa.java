@@ -1,4 +1,7 @@
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 public class Dofa extends Character{
     private BufferedImage image;
 
@@ -9,7 +12,11 @@ public class Dofa extends Character{
 
     public Dofa(int posX, int posY, int width, int height, int velX, int velY, boolean dir, int life,BufferedImage image) {
         super(posX,posY,width,height,velX,velY,dir,life);
-        this.image = image;
+        try {
+        	image=(BufferedImage)ImageIO.read(getClass().getClassLoader().getResource("dofa.png"));
+        }catch(IOException e) {
+        	e.printStackTrace();
+        }
     }
 
     public BufferedImage getImage() {
@@ -21,9 +28,9 @@ public class Dofa extends Character{
     }
 
     public String toString() {
-        return super.toString()+"{" +
+        return (super.toString()+"{" +
             " image='" + getImage() + "'" +
-            "}";
+            "}");
     }
 
     public void mover(){
