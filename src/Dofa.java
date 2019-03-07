@@ -33,8 +33,8 @@ public class Dofa extends Character{
             "}");
     }
 
-    public void mover(){
-
+    public void mover(int key){
+    	
     }
     public void paint(){
 
