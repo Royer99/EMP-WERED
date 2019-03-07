@@ -1,5 +1,5 @@
 package characters;
-public class abstract Character{
+public abstract class Character{
     
     protected int posX;
     protected int posY;

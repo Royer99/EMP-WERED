@@ -1,4 +1,4 @@
-package characters.dofa;
+package characters;
 import java.awt.image.BufferedImage;
 public class Dofa extends Character{
     private BufferedImage image;
