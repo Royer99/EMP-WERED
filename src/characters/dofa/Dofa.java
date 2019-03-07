@@ -5,9 +5,11 @@ public class Dofa extends Character{
 
 
     public Dofa() {
+        super();
     }
 
-    public Dofa(BufferedImage image) {
+    public Dofa(int posX, int posY, int width, int height, int velX, int velY, boolean dir, int life,BufferedImage image) {
+        super(posX,posY,width,height,velX,velY,dir,life);
         this.image = image;
     }
 
