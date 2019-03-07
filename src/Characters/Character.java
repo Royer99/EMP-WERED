@@ -1,3 +1,6 @@
+package Characters;
+import java.awt.Graphics2D;
+
 public abstract class Character{
     
     protected int posX;
@@ -106,7 +109,7 @@ public abstract class Character{
     }
 
     public abstract void mover();
-    public abstract void paint();
+    public abstract void paint(Graphics2D g);
     public abstract void ataca();
 
 }
