@@ -1,4 +1,4 @@
 
-public class Bullet {
+public class Bullet {as
 
 }
