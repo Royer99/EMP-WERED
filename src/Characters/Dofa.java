@@ -43,11 +43,27 @@ public class Dofa extends Character{
             "}");
     }
 
+<<<<<<< HEAD:src/Characters/Dofa.java
 	@Override
 	public void mover() {
 		// TODO Auto-generated method stub
 		
 	}
+=======
+    public void mover(int key)
+    {
+        System.out.println("metodo mover");
+    	
+    }
+    public void paint(){
+        System.out.println("metodo paint");
+
+    }
+    public void ataca(){
+        System.out.println("metodo atacar");
+
+    }
+>>>>>>> 355b2415ca78cfc660e7d9503fd987b15ac13672:src/Dofa.java
 
 	@Override
 	public void paint(Graphics2D g) {
