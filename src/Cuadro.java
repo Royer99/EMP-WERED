@@ -5,7 +5,11 @@ public class Cuadro extends Objeto {
 
 	
 	public Cuadro() {
-		
+		try {
+        	image=(BufferedImage)ImageIO.read(getClass().getClassLoader().getResource("dofa.png"));
+        }catch(IOException e) {
+        	e.printStackTrace();
+        }
 	}
 
 
