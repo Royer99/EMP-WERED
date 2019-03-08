@@ -29,6 +29,18 @@ public class  Bully extends Enemy
 		
 	}
 
+	@Override
+	public void mover(int key) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
     
 }
