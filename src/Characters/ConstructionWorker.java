@@ -32,40 +32,107 @@ public class ConstructionWorker extends Enemy
         }
 	}
 	
+
+
 	
-	
-	@Override
-	public void mover() {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void paint(Graphics2D g) {
-		g.drawImage(img,posX,posY,width,height,null);
-		
-	}
-	@Override
-	public void ataca() {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void morir(int life) {
-		// TODO Auto-generated method stub
-		
-	}
 	@Override
 	public void mover(int key) {
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
+
 	@Override
-	public void update() {
+	public void ataca(int key) {
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
+
+	public BufferedImage getImg() {
+		return img;
+	}
+
+
+
+
+	public void setImg(BufferedImage img) {
+		this.img = img;
+	}
+
+
+
+
+	public Rectangle getRect() {
+		return rect;
+	}
+
+
+
+
+	public void setRect(Rectangle rect) {
+		this.rect = rect;
+	}
+
+
+
+
+	@Override
+	public void paint(Graphics2D g) {
+		g.drawImage(img,posX,posY,width,height,null);
+		
+	}
+	
+	
+
 	
 
 
+	@Override
+	public void ataca() {
+		// TODO Auto-generated method stub
+		super.ataca();
+	}
+
+
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		super.update();
+	}
+
+
+
+	@Override
+	public void mover() {
+		// TODO Auto-generated method stub
+		super.mover();
+	}
+
+
+
+	@Override
+	public boolean morir() {
+		// TODO Auto-generated method stub
+		return super.morir();
+	}
+
+
+
+	@Override
+	public boolean colision(Rectangle rect) 
+	{
+		if(this.rect.getBounds().intersects(rect.getBounds())) {return true;}
+		else {
+		return false;}
+	}
 	
+	
+
+
 }

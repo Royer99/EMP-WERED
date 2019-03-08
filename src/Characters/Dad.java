@@ -2,7 +2,7 @@ package Characters;
 
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-import java.awt.Toolkit;
+
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
@@ -36,29 +36,79 @@ public class Dad extends Enemy
 		// TODO Auto-generated constructor stub
 	}
 
+	
+	
+
+	
+
+
+
+	@Override
+	public void ataca() {
+		// TODO Auto-generated method stub
+		super.ataca();
+	}
+
+
+
+
+
+
+
 
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		
+		super.update();
 	}
+
+
+
+
+
+
+
+
 	@Override
 	public void mover() {
 		// TODO Auto-generated method stub
-		
+		super.mover();
 	}
+
+
+
+
+
+
+
+
 	@Override
-	public void mover(int key) {
-
-		System.out.println("aqui me muevo");
+	public boolean morir() {
+		// TODO Auto-generated method stub
+		return super.morir();
 	}
 
-	
-	public void morir(int life)
+
+
+
+
+
+
+
+	@Override
+	public boolean colision(Rectangle rect) 
 	{
-		System.out.println("aqui vivo");
-		
+		if(this.rect.getBounds().intersects(rect.getBounds())) {return true;}
+		else {
+		return false;}
 	}
+
+
+
+
+
+
+
 
 	@Override
 	public void paint(Graphics2D g)
@@ -69,19 +119,8 @@ public class Dad extends Enemy
 		
 	}
 	
-	@Override
-	public void ataca() {
-		
-		
-		System.out.println("ataco");
-	}
-
-	
 	
 
-	
-
-	
 	
 	//SETTERS AND GETTERS
 	
@@ -206,6 +245,32 @@ public class Dad extends Enemy
 	public String toString() {
 		// TODO Auto-generated method stub
 		return super.toString();
+	}
+
+
+
+
+
+
+
+
+	@Override
+	public void mover(int key) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+
+
+
+
+	@Override
+	public void ataca(int key) {
+		// TODO Auto-generated method stub
+		
 	}
 
 
