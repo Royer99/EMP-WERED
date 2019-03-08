@@ -15,14 +15,6 @@ import javax.imageio.ImageIO;
  * @lastEdit:metodo update
  * @status: se mueve parcialmente y se pinta
  */
-/**
- * @author royer
- *
- */
-/**
- * @author royer
- *
- */
 public class Dofa extends Character{
     private BufferedImage image;
     private boolean flag,flag2;
