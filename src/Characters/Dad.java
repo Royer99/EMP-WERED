@@ -2,6 +2,7 @@ package Characters;
 
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
@@ -62,8 +63,9 @@ public class Dad extends Enemy
 	@Override
 	public void paint(Graphics2D g)
 	{
-		
 		g.drawImage(img,posX,posY,width,height,null);
+		
+		
 		
 	}
 	

@@ -1,6 +1,17 @@
 package Characters;
 import java.awt.Graphics2D;
 
+/**
+ * 
+ * @author Ivanramirez
+ * @className: ConstructionWorker
+ * @description:ConstructionWorker class models the methods of the main character 
+ * @lastEditDate:07/03/2019
+ * @lastEdit:BufferedImage,paint,mover,morir,ataca, Rectangle,
+ * @status: does not move yet but the paint method works fine over the FakeScroll test
+ *
+ */
+
 public abstract class  Enemy extends Character{
 
 	public Enemy() {
