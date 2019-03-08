@@ -114,4 +114,7 @@ public abstract class Character{
     public abstract void ataca();
     public abstract void update();
 
+
+	public abstract void mover();
+
 }
