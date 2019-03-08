@@ -16,19 +16,14 @@ public abstract class  Enemy extends Character{
 
 
 	@Override
-	public void mover() {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract void mover();
+	
 
 	@Override
 	public abstract void paint(Graphics2D g);
 
 	@Override
-	public void ataca() {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract  void ataca();
 	
 	public abstract void morir(int life);	
 	
