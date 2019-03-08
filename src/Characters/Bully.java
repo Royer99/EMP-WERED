@@ -5,7 +5,8 @@ public class  Bully extends Enemy
 {
 
 	@Override
-	public void mover() {
+	public void mover() 
+	{
 		// TODO Auto-generated method stub
 		
 	}
@@ -18,6 +19,12 @@ public class  Bully extends Enemy
 
 	@Override
 	public void ataca() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void morir(int life) {
 		// TODO Auto-generated method stub
 		
 	}
