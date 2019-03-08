@@ -26,7 +26,7 @@ public class Main {
 		pool.execute(game);
 		game.addNotify();
 		pool.shutdown();
-		System.out.println("hola");
+		
 	}
 
 
