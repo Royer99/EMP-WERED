@@ -1,3 +1,4 @@
+package plataforma;
 import java.awt.image.BufferedImage;
 
 public class Tubo extends Objeto {

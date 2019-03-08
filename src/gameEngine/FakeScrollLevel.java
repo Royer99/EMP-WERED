@@ -1,6 +1,5 @@
 package gameEngine;
 import java.awt.Graphics2D;
-import java.util.Random;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
@@ -10,16 +9,20 @@ import javax.imageio.ImageIO;
 
 import Characters.Character;
 import Characters.Dofa;
+import plataforma.Cuadro;
+import plataforma.Objeto;
 public class FakeScrollLevel extends LevelController{
     private BufferedImage img,img2;
     private int scrollSpd;
     private int b1_xOff;
     private int b2_xOff;
     private Character player;
+    private Objeto plataforma;
 
     public FakeScrollLevel(int wwidth,int wheight){
         super(wwidth,wheight);
         player=new Dofa(200,300,500,500,2,2,true,100); 
+        plataforma=new Cuadro(0,600,800,200);
         try{
             img=(BufferedImage)ImageIO.read(getClass().getClassLoader().getResource("metrocdmx.jpg"));
             img2=(BufferedImage)ImageIO.read(getClass().getClassLoader().getResource("metrocdmx.jpg"));
@@ -79,6 +82,7 @@ public class FakeScrollLevel extends LevelController{
        g.drawImage(img, b1_xOff, 0, null);
        g.drawImage(img, b2_xOff, 0, null);
        player.paint(g);
+       plataforma.paint(g);
    }
    public void update(){
        super.update();

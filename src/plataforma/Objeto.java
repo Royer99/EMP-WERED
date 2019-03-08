@@ -1,13 +1,20 @@
-import java.awt.Image;
+package plataforma;
+import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
-public class Objeto {
+public abstract class Objeto {
 	protected int posY;
 	protected int posX;
 	protected int width;
 	protected int height;
-	protected Image imagen;
 	protected Rectangle rect;
+
+	public Objeto(int posX,int posY,int width,int height){
+		this.posX=posX;
+		this.posY=posY;
+		this.width=width;
+		this.height=height;
+	}
 	
 	public int getPosY() {
 		return posY;
@@ -41,14 +48,6 @@ public class Objeto {
 		this.height = height;
 	}
 
-	public Image getImagen() {
-		return imagen;
-	}
-
-	public void setImagen(Image imagen) {
-		this.imagen = imagen;
-	}
-
 	public Rectangle getRect() {
 		return rect;
 	}
@@ -56,5 +55,7 @@ public class Objeto {
 	public void setRect(Rectangle rect) {
 		this.rect = rect;
 	}
+	
+	public abstract void paint(Graphics2D g);
 	
 }
