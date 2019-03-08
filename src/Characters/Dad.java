@@ -7,6 +7,17 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+/**
+ * 
+ * @author Ivanramirez
+ * @className: ConstructionWorker
+ * @description:ConstructionWorker class models the methods of the main character 
+ * @lastEditDate:07/03/2019
+ * @lastEdit:BufferedImage,paint,mover,morir,ataca, Rectangle,
+ * @status: does not move yet but the paint method works fine over the FakeScroll test
+ *
+ */
+
 public class Dad extends Enemy
 {
 	BufferedImage img;
