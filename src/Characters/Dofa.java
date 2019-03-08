@@ -14,6 +14,8 @@ import javax.imageio.ImageIO;
  */
 public class Dofa extends Character{
     private BufferedImage image;
+    private boolean flag,flag2;
+
 
 
     public Dofa() {
@@ -22,6 +24,8 @@ public class Dofa extends Character{
 
     public Dofa(int posX, int posY, int width, int height, int velX, int velY, boolean dir, int life) {
         super(posX,posY,width,height,velX,velY,dir,life);
+        flag=true;
+		flag2=false;
         try {
         	image=(BufferedImage)ImageIO.read(getClass().getClassLoader().getResource("dofa.png"));
         }catch(IOException e) {
@@ -43,17 +47,39 @@ public class Dofa extends Character{
             "}");
     }
 
-	@Override
-	public void mover() {
-		// TODO Auto-generated method stub
+    @Override
+	public void mover(int Key) {
+        if(Key==1) {
+			flag=true;
+		}else if(Key==2) {
+			flag2=true;
+		}else if(Key==3) {
+			flag=false;
+		}else if(Key==4) {
+			flag2=false;
+		}
+    }
+        
+    public void paint(Graphics2D g) {
+		g.drawImage(image,posX,posY,width,height,null);
+    }
+    
+    public void update() {
+		if(flag&&flag2) {
+			this.posX=posX-velX;
+			this.posY=posY-velY;
+		}else if(flag&&!flag2) {
+			this.posX=posX-velX;
+			this.posY=posY+velY;
+		}else if(!flag&&flag2) {
+			this.posX=posX+velX;
+			this.posY=posY-velY;
+		}else if(!flag&&!flag2){
+			this.posX=posX+velX;
+			this.posY=posY+velY;
+		}
 		
 	}
-
-	@Override
-	public void paint(Graphics2D g) {
-		g.drawImage(image,posX,posY,width,height,null);
-	}
-	
 	@Override
 	public void ataca() {
 		// TODO Auto-generated method stub
