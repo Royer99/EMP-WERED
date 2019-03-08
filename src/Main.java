@@ -5,7 +5,11 @@ import java.util.concurrent.Executors;
 import javax.swing.JFrame;
 
 import gameEngine.Panel1;
-
+/**
+ * 
+ * @author royer
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
