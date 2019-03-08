@@ -32,7 +32,6 @@ public abstract class  Enemy extends Character{
 	
 	public abstract void morir(int life);	
 	
-	
 
          
 }

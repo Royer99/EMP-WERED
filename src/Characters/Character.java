@@ -109,8 +109,9 @@ public abstract class Character{
             "}";
     }
 
-    public abstract void mover();
+    public abstract void mover(int key);
     public abstract void paint(Graphics2D g);
     public abstract void ataca();
+    public abstract void update();
 
 }

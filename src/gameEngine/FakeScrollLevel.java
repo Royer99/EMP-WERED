@@ -19,7 +19,7 @@ public class FakeScrollLevel extends LevelController{
 
     public FakeScrollLevel(int wwidth,int wheight){
         super(wwidth,wheight);
-        player=new Dofa(100, 100,50,50,2,2,true,100); 
+        player=new Dofa(200,300,500,500,2,2,true,100); 
         try{
             img=(BufferedImage)ImageIO.read(getClass().getClassLoader().getResource("metrocdmx.jpg"));
             img2=(BufferedImage)ImageIO.read(getClass().getClassLoader().getResource("metrocdmx.jpg"));
@@ -90,7 +90,7 @@ public class FakeScrollLevel extends LevelController{
        if(b2_xOff<=(-img.getWidth())){
         b2_xOff=img.getWidth();
         }
-        //player.update();
+        player.update();
    		
    }
    public void mouseClicked(MouseEvent e){
@@ -98,13 +98,13 @@ public class FakeScrollLevel extends LevelController{
    }
    public void keyPressed(KeyEvent e){
        if(e.getKeyCode()==KeyEvent.VK_LEFT){
-           //player.mover(1);
+           player.mover(1);
        }else if(e.getKeyCode()==KeyEvent.VK_RIGHT){
-            //player.mover(3);
+            player.mover(3);
        }else if(e.getKeyCode()==KeyEvent.VK_UP) {
-    	   	//player.mover(2);
+    	   	player.mover(2);
        }else if(e.getKeyCode()==KeyEvent.VK_DOWN) {
-    	    //player.mover(4);
+    	    player.mover(4);
        }
    }
 }
