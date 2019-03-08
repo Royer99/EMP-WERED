@@ -84,7 +84,13 @@ public class Dofa extends Character{
 	public void ataca() {
 		// TODO Auto-generated method stub
 		
-	}
+    }
+    public void powerUpCollision(Rectangle r){
+
+    }
+    public void onFloor(){
+        
+    }
     
     
 }
